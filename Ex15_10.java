@@ -22,8 +22,8 @@ class PrintStrings implements Runnable {
 
 public class Ex15_10 {
     public static void main(String[] args) {
-        Thread hi = new Thread(new PrintStrings("Hello", 1000)); // 每隔1秒印出一次
-        Thread bye = new Thread(new PrintStrings("Good bye", 2500)); // 每隔2.5秒印出一次
+        Thread hi = new Thread(new PrintStrings("Hello", 1000));
+        Thread bye = new Thread(new PrintStrings("Good bye", 2500));
 
         hi.start();
         bye.start();
