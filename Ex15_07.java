@@ -14,9 +14,9 @@ class MyRunnable implements Runnable {
             System.out.println("Thread " + threadName + " is running...");
             try {
                 if (threadName.equals("t1")) {
-                    Thread.sleep(1000); // Sleep for 1 second (1000 milliseconds)
+                    Thread.sleep(1000);
                 } else if (threadName.equals("t2")) {
-                    Thread.sleep(2500); // Sleep for 2.5 seconds (2500 milliseconds)
+                    Thread.sleep(2500);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
